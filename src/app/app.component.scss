@@ -1,0 +1,51 @@
+@import '../../variables.scss';
+
+.rounded-img {
+  width: 200px;
+  border-radius: 50%;
+  background: #555;
+  padding: 7px;
+  margin: 10px 0;
+}
+
+.home,
+.portfolio,
+.social-coding,
+.font-icons,
+.portfolio-details,
+.achievements {
+  -webkit-animation: fadein 1s;
+  -moz-animation: fadein 1s;
+  animation: fadein 1s;
+}
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.portfolio-section .col-xs-3,
+.social-coding .col-xs-3 {
+  float: none;
+  display: inline-block;
+  width: inherit;
+}

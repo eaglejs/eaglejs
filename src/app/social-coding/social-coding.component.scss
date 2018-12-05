@@ -1,0 +1,38 @@
+@import '../../variables.scss';
+
+.social-coding-items {
+  vertical-align: top;
+}
+.social-coding a {
+  background: #555; /*#A5A5A5;*/
+  border-radius: 50%;
+  color: $textColor;
+  display: block;
+  margin: 10px auto;
+  padding: 25px;
+  width: 150px;
+}
+.social-coding a:hover,
+.social-coding a:focus {
+  background: $primary;
+  color: $secondary;
+  -moz-transition: background 0.2s 0.1s, color 0.2s 0.1s;
+  -webkit-transition: background 0.2s 0.1s, color 0.2s 0.1s;
+  transition: background 0.2s 0.1s, color 0.2s 0.1s;
+}
+.codewars {
+  fill: $textColor;
+  height: 93px;
+  width: 98px;
+}
+.social-coding a:hover .codewars,
+.social-coding a:focus .codewars {
+  fill: $secondary;
+  -moz-transition: fill 0.2s 0.1s;
+  -webkit-transition: fill 0.2s 0.1s;
+  transition: fill 0.2s 0.1s;
+}
+.font-icons {
+  font-size: 7em;
+  color: inherit;
+}

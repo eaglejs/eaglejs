@@ -1,71 +1,139 @@
-@import 'variables.scss';
+@import "variables.scss";
 
 /* You can add global styles to this file, and also import other style files */
 * {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 }
+
 body {
-  -webkit-animation: fadein 1s;
-  -moz-animation: fadein 1s;
-  animation: fadein 1s;
-  background: $secondary;
+	-webkit-animation: fadein 1s;
+	-moz-animation: fadein 1s;
+	animation: fadein 1s;
+	background: $secondary;
 }
+
 ol,
 ul {
-  list-style: none;
+	list-style: none;
 }
+
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
 }
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  color: $primary;
-  margin-bottom: 10px;
+	color: $primary;
+	margin-bottom: 10px;
 }
+
 h1 {
-  font-size: 2.2rem;
+	font-size: 2.2rem;
 }
+
 h2 {
-  font-size: 1.8rem;
+	font-size: 1.8rem;
 }
+
 h3 {
-  font-size: 1.6rem;
+	font-size: 1.6rem;
 }
+
 h4 {
-  font-size: 1.4rem;
+	font-size: 1.4rem;
 }
+
 h5 {
-  font-size: 1.2rem;
+	font-size: 1.2rem;
 }
+
 h6 {
-  font-size: 1rem;
+	font-size: 1rem;
 }
+
 section {
-  margin-bottom: 10px;
+	margin-bottom: 10px;
 }
+
 a,
 a:hover,
 a:focus,
 a:active {
-  color: $primary;
+	color: $primary;
 }
 
 .clearfix:after {
-  content: '.';
-  visibility: hidden;
-  display: block;
-  height: 0;
-  clear: both;
+	content: '.';
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
 }
 
 p {
-  color: $textColor;
-  margin-bottom: 20px;
+	color: $textColor;
+	margin-bottom: 20px;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.rounded-img {
+	width: 200px;
+	border-radius: 50%;
+	background: #555;
+	padding: 7px;
+	margin: 10px 0;
+}
+
+.home,
+.portfolio,
+.social-coding,
+.font-icons,
+.portfolio-details,
+.not-found,
+.achievements {
+	-webkit-animation: fadein 1s;
+	-moz-animation: fadein 1s;
+  animation: fadein 1s;
+  overflow: auto;
+  margin-bottom: 25px;
+}
+
+@-moz-keyframes fadein {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes fadein {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes fadein {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
 }

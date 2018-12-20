@@ -1,16 +1,17 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { AppRoutingModule } from './app-routing/app-routing.module';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
+import { AchievementsComponent } from './achievements/achievements.component';
 import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing/app-routing.module';
+import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { SocialCodingComponent } from './social-coding/social-coding.component';
-import { AchievementsComponent } from './achievements/achievements.component';
-import { NotFoundComponent } from './not-found/not-found.component';
-import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { FooterComponent } from './footer/footer.component';
   imports: [
     AngularFontAwesomeModule,
     AppRoutingModule,
-    BrowserModule
+    BrowserModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]

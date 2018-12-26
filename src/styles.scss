@@ -82,8 +82,32 @@ p {
 	margin-bottom: 20px;
 }
 
+blockquote:before {
+	content: '\f10d';
+	color: #FFF;
+	font-family: "FontAwesome";
+	font-size: 1em;
+}
+
+blockquote {
+	border: none;
+	font-size: 1em;
+}
+
+blockquote:after {
+	content: '\f10e';
+	color: #FFF;
+	font-family: "FontAwesome";
+	font-size: 1em;
+}
+
 .text-center {
 	text-align: center;
+}
+
+.hide {
+	position: absolute;
+	left: -99999px;
 }
 
 .rounded-img {
@@ -101,11 +125,9 @@ p {
 .portfolio-details,
 .not-found,
 .achievements {
-	-webkit-animation: fadein 1s;
-	-moz-animation: fadein 1s;
-  animation: fadein 1s;
-  overflow: auto;
-  margin-bottom: 25px;
+	animation: fadein 1s;
+	overflow: auto;
+	margin-bottom: 25px;
 }
 
 @-moz-keyframes fadein {

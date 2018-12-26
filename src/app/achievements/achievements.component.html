@@ -16,7 +16,13 @@
     They will even give you %50 off for the first month if you click on this link
     <a href="http://referrals.trhou.se/eaglejs" target="_blank">Teamtreehouse - 50% discount for a month</a>.
   </p>
-  <div class="container-fluid achievements-section">
-    <div class="row text-center"></div>
-  </div>
+
+    <div *ngFor="let badge of profile.badges">
+      <div class="text-center">
+            <img src="{{badge.icon_url}}" class="achievement-img" alt="{{badge.name}}">
+        <p>
+          {{badge.name}}
+        </p>
+      </div>
+    </div>
 </div>

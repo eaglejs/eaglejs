@@ -1,12 +1,17 @@
-@import '../../variables.scss';
+@import "../../variables.scss";
 
-.achievements blockquote {
-  color: $textColor;
-  font-size: 2.1rem;
-  text-align: center;
+.achievements {
+	max-width: 1000px;
+	margin: 0 auto;
+
+	blockquote {
+		color: $textColor;
+		font-size: 2.1rem;
+		text-align: center;
+	}
 }
-.achievements .col-xs-4 {
-  float: none;
-  display: inline-block;
-  vertical-align: top;
+
+.achievement-img {
+	width: 50px;
+	height: 50px;
 }

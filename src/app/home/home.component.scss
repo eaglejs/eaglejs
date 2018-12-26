@@ -1,21 +1,27 @@
 @import '../../variables.scss';
 
-.home h1 {
-  font-size: 4rem;
-}
-.home h1 + p {
-  font-size: 2rem;
+.home {
+  max-width: 1000px;
+  margin: 0 auto;
+
+  h1 {
+    font-size: 4rem;
+    & + p {
+      font-size: 2rem;
+    }
+  }
 }
 
 .resume {
   color: $textColor;
   margin-right: 10px;
+
+  &:hover, &:focus {
+    color: $textColor;
+    text-decoration: none;
+  }
 }
-.resume:hover,
-.resume:focus {
-  color: $textColor;
-  text-decoration: none;
-}
+
 .resume-pdf:before {
   color: #555;
   content: '\f1c1';
@@ -28,12 +34,11 @@
   font-family: 'FontAwesome';
   font-size: 4em;
 }
+
 .resume-pdf:hover:before,
 .resume-pdf:focus:before,
 .resume-docx:hover:before,
 .resume-docx:focus:before {
   color: $primary;
-  -moz-transition: background 0.2s 0.1s, color 0.2s 0.1s;
-  -webkit-transition: background 0.2s 0.1s, color 0.2s 0.1s;
   transition: background 0.2s 0.1s, color 0.2s 0.1s;
 }

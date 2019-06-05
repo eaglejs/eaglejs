@@ -5,24 +5,40 @@
   </blockquote>
   <p>
     I am very active in learning the latest and greatest technologies.
-    Teamtreehouse is one of the sites that I use to learn the best practices for professional web applications.
-    I dive into javascript primarily, but I plan to expand my knowledge so that I can be a full-stack developer.
-    (This is one of many goals.) <a href="http://www.teamtreehouse.com/" target="_blank">Teamtreehouse.com</a> was
-    kind enough to provide data of the learning modules I have completed that I can pull from their site and display it
-    here.
+    Teamtreehouse is one of the sites that I use to learn the best practices for
+    professional web applications. I dive into javascript primarily, but I plan
+    to expand my knowledge so that I can be a full-stack developer. (This is one
+    of many goals.)
+    <a href="http://www.teamtreehouse.com/" target="_blank"
+      >Teamtreehouse.com</a
+    >
+    was kind enough to provide data of the learning modules I have completed
+    that I can pull from their site and display it here.
   </p>
   <p>
-    If you are a developer like myself, I highly recommend that you signup.
-    They will even give you %50 off for the first month if you click on this link
-    <a href="http://referrals.trhou.se/eaglejs" target="_blank">Teamtreehouse - 50% discount for a month</a>.
+    If you are a developer like myself, I highly recommend that you signup. They
+    will even give you %50 off for the first month if you click on this link
+    <a href="http://referrals.trhou.se/eaglejs" target="_blank"
+      >Teamtreehouse - 50% discount for a month</a
+    >.
   </p>
-
-    <div *ngFor="let badge of profile.badges">
-      <div class="text-center">
-            <img src="{{badge.icon_url}}" class="achievement-img" alt="{{badge.name}}">
-        <p>
-          {{badge.name}}
-        </p>
-      </div>
+  <section
+    fxLayout="row wrap"
+    fxLayout.xs="column"
+    fxLayoutWrap
+    fxLayoutGap="10px"
+  >
+    <div
+      *ngFor="let badge of profile.badges"
+      fxFlex="calc(25% - 10px)"
+      class="text-center"
+    >
+      <img
+        src="{{ badge.icon_url }}"
+        class="achievement-img"
+        alt="{{ badge.name }}"
+      />
+      <p>{{ badge.name }}</p>
     </div>
+  </section>
 </div>

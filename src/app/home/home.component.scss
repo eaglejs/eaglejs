@@ -13,11 +13,11 @@
 }
 
 .resume {
-  color: $textColor;
+  color: $text;
   margin-right: 10px;
 
   &:hover, &:focus {
-    color: $textColor;
+    color: $text;
     text-decoration: none;
   }
 }

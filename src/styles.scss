@@ -11,7 +11,8 @@ body {
 	-webkit-animation: fadein 1s;
 	-moz-animation: fadein 1s;
 	animation: fadein 1s;
-	background: $secondary;
+  background: $secondary;
+  margin: 0;
 }
 
 ol,
@@ -78,7 +79,7 @@ a:active {
 }
 
 p {
-	color: $textColor;
+	color: $text;
 	margin-bottom: 20px;
 }
 

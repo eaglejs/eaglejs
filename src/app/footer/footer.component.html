@@ -1,9 +1,10 @@
 <footer>
-  <ul class="text-center">
-    <a routerLink="/">Home</a>
-    <a routerLink="/portfolio">Portfolio</a>
-    <a routerLink="/social-coding">Social Coding</a>
-    <a routerLink="/achievements">Achievements</a>
-  </ul>
-  <p class="text-center">Copyright: Joshua Eagle ({{year}})</p>
+  <nav>
+    <ul class="text-center navigation" fxLayout="row" fxLayoutGap="0">
+      <a routerLink="/" fxFlex="25" matTooltip="Home"><i class="material-icons">home</i></a>
+      <a routerLink="/portfolio" fxFlex="25" matTooltip="Portfolio"><i class="material-icons">work</i></a>
+      <a routerLink="/social-coding" fxFlex="25" matTooltip="Social Coding"><i class="material-icons">code</i></a>
+      <a routerLink="/achievements" fxFlex="25" matTooltip="Achievements"><i class="material-icons">star</i></a>
+    </ul>
+  </nav>
 </footer>

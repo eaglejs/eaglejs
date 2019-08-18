@@ -12,11 +12,14 @@ export class FooterComponent implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit() {
-    this.isActive();
+    this.isActive(null);
   }
 
-  isActive(): void {
-    console.log(this.router.url.split('/')[1]);
-    console.log(window.location.href);
+  isActive(path): void {
+    if (path || path !== null) {
+      this.activePath = path;
+    } else {
+      this.activePath = window.location.pathname.split('/')[1];
+    }
   }
 }

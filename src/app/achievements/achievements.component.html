@@ -25,7 +25,7 @@
   </p>
   <section
     fxLayout="row wrap"
-    fxLayout.xs="column"
+    fxLayout.xs="row wrap"
     fxLayoutWrap
     fxLayoutGap="10px"
     *ngIf="profile"
@@ -33,6 +33,7 @@
     <div
       *ngFor="let badge of profile.badges"
       fxFlex="calc(25% - 10px)"
+      fxFlex="calc(50% - 10px)"
       class="text-center"
     >
       <img

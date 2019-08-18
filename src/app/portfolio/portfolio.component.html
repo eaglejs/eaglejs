@@ -1,7 +1,7 @@
 <div class="portfolio">
   <h1>Portfolio</h1>
-  <div fxLayout="row wrap" fxLayoutGap="10px" class="text-center portfolio-section">
-    <div *ngFor="let portfolio of portfolios" fxFlex="calc(33% - 10px)">
+  <div fxLayout="row wrap" fxLayout.xs="column" fxLayoutGap="10px" class="text-center portfolio-section">
+    <div *ngFor="let portfolio of portfolios" fxFlex="calc(33% - 10px)" fxFlex.sm="calc(50% - 10px)">
       <a routerLink="{{portfolio.route}}" class="portfolio-item">
         <span class="frame">
           <span class="content">

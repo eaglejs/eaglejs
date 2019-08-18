@@ -2,7 +2,7 @@
   <a href="{{ portfolio.url }}" target="_blank">
     <h1>{{ portfolio.title }}</h1>
   </a>
-  <div fxFlexLayout="row" fxLayoutGap="10px">
+  <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxLayoutGap="10px">
     <div fxFlex="calc(33% - 10px)">
       <div [innerHTML]="portfolio.about"></div>
       <p>

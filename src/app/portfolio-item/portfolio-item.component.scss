@@ -1,0 +1,16 @@
+.portfolio-details {
+  max-width: 1000px;
+	margin: 0 auto;
+}
+.portfolio-details .image {
+  background: #555;
+  padding: 7px;
+}
+.portfolio-details blockquote:before {
+  left: 15px;
+  position: absolute;
+}
+.portfolio-details blockquote:after {
+  right: 15px;
+  position: absolute;
+}

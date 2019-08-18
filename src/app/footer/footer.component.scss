@@ -1,6 +1,9 @@
 @import '../../variables.scss';
 
-
+%common-styles {
+  color: $secondary;
+  background: $primary;
+}
 .navigation {
   padding: 0;
   margin: 0;
@@ -20,9 +23,12 @@
     }
 
     &:hover, &:focus {
-      color: $secondary;
-      background: $primary;
+      @extend %common-styles;
 			transition: background 0.2s 0.1s, color 0.2s 0.1s;
+    }
+
+    &.active {
+      @extend %common-styles;
     }
   }
 }

@@ -1,0 +1,19 @@
+<div class="portfolio-details">
+  <a href="{{ portfolio.url }}" target="_blank">
+    <h1>{{ portfolio.title }}</h1>
+  </a>
+  <div fxFlexLayout="row" fxLayoutGap="10px">
+    <div fxFlex="calc(33% - 10px)">
+      <div [innerHTML]="portfolio.about"></div>
+      <p>
+        {{ portfolio.toolsUsed }}
+      </p>
+    </div>
+    <div fxFlex="calc(33% - 10px)">
+      <div class="text-center image">
+        <a href="{{ portfolio.url }}" target="_blank"><img src="{{ portfolio.img }}" class="img-responsive"
+            alt="{{ portfolio.title }}"></a>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,8 +1,9 @@
 <div class="achievements">
   <h1>Achievements</h1>
-  <blockquote>
-    An investment in knowledge pays the best interest - Benjamin Franklin
-  </blockquote>
+  <span class="quote">
+    <blockquote>An investment in knowledge pays the best interest.</blockquote>
+    <p class="text-right">- Benjamin Franklin</p>
+  </span>
   <p>
     I am very active in learning the latest and greatest technologies.
     Teamtreehouse is one of the sites that I use to learn the best practices for
@@ -27,6 +28,7 @@
     fxLayout.xs="column"
     fxLayoutWrap
     fxLayoutGap="10px"
+    *ngIf="profile"
   >
     <div
       *ngFor="let badge of profile.badges"

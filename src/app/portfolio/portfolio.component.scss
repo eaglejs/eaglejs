@@ -1,74 +1,78 @@
 @import '../../variables.scss';
-
-.portfolio-item {
-  background: #555;
-  border: none;
-  margin-bottom: 10px;
-  padding: 0;
-  text-decoration: none;
+%common-block-styles {
+  display: block;
 }
-.portfolio-item:hover,
-.portfolio-item .frame:hover,
-.portfolio-item:focus {
+
+%common-hover-styles {
   background: $primary;
-  -moz-transition: background 0.2s ease-in;
-  -webkit-transition: background 0.2s ease-in;
   transition: background 0.2s ease-in;
 }
-.portfolio-item:after {
-  content: '';
-  opacity: 0;
-}
-.portfolio-item:hover:after,
-.portfolio-item:focus:after {
+
+%common-hover-after-styles {
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   border-top: 10px solid $primary;
-  bottom: 50px;
+  bottom: 45px;
   content: '';
   display: block;
   height: 0;
   left: 0;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   position: absolute;
   right: 0;
-  -moz-transition: opacity 0.2s ease-in;
-  -webkit-transition: opacity 0.2s ease-in;
   transition: opacity 0.2s ease-in;
   opacity: 1;
   width: 0;
 }
-.portfolio-section .frame {
-  padding: 7px;
+
+.portfolio {
+  max-width: 1000px;
+	margin: 0 auto;
 }
-.portfolio-section .frame + p {
-  background: $secondary;
-  margin: 0;
-  padding: 15px;
-}
-.portfolio-section .frame:hover {
-  background: $primary;
-}
-.portfolio-section .frame .content {
-  overflow: hidden;
-  max-height: 200px;
-}
-.portfolio-details {
-  overflow-y: auto;
-}
-.portfolio-details .image {
-  background: #555;
-  margin: 0 10px 10px 10px;
-  max-width: 280px;
-  overflow: hidden;
-  padding: 7px;
-}
-.portfolio-details blockquote:before {
-  left: 15px;
-  position: absolute;
-}
-.portfolio-details blockquote:after {
-  right: 15px;
-  position: absolute;
+
+.portfolio-item {
+  border: none;
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 0;
+  position: relative;
+  text-decoration: none;
+
+  &:hover {
+    &:after{ @extend %common-hover-after-styles; }
+
+    .frame {
+        @extend %common-hover-styles;
+    }
+  }
+
+  &:focus {
+    &:after{ @extend %common-hover-after-styles; }
+    .frame {
+        @extend %common-hover-styles;
+    }
+  }
+
+  &:after {
+    content: '';
+    opacity: 0;
+  }
+
+  .frame {
+    background: $emphasis;
+    display: inline-block;
+    padding: 7px;
+
+    p {
+      background: $secondary;
+      margin: 0;
+      padding: 15px;
+    }
+  }
+
+  .content {
+    @extend %common-block-styles;
+    overflow: hidden;
+    max-height: 200px;
+  }
 }

@@ -13,6 +13,7 @@ import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { SocialCodingComponent } from './social-coding/social-coding.component';
+import { PortfolioItemComponent } from './portfolio-item/portfolio-item.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { SocialCodingComponent } from './social-coding/social-coding.component';
     SocialCodingComponent,
     AchievementsComponent,
     NotFoundComponent,
-    FooterComponent
+    FooterComponent,
+    PortfolioItemComponent
   ],
   imports: [
     AngularFontAwesomeModule,

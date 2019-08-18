@@ -14,6 +14,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { SocialCodingComponent } from './social-coding/social-coding.component';
 import { PortfolioItemComponent } from './portfolio-item/portfolio-item.component';
+import { APP_BASE_HREF } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,7 @@ import { PortfolioItemComponent } from './portfolio-item/portfolio-item.componen
     FlexLayoutModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [{ provide: APP_BASE_HREF, useValue: '/' }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

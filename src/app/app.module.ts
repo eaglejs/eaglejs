@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { MaterialModule } from './material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 
@@ -32,7 +33,8 @@ import { APP_BASE_HREF } from '@angular/common';
     AppRoutingModule,
     BrowserModule,
     FlexLayoutModule,
-    HttpClientModule
+    HttpClientModule,
+    MaterialModule,
   ],
   providers: [{ provide: APP_BASE_HREF, useValue: '/' }],
   bootstrap: [AppComponent]

@@ -1,7 +1,7 @@
 <footer>
   <nav>
     <ul class="text-center navigation" fxLayout="row" fxLayoutGap="0">
-      <a (click)="isActive('')" routerLink="/" fxFlex="25" matTooltip="Home" [class.active]="activePath === ''"><i class="material-icons">home</i></a>
+      <a (click)="isActive('')" routerLink="/" fxFlex="25" matTooltip="Home" matTooltipPosition="above" [class.active]="activePath === ''"><i class="material-icons">home</i></a>
       <a (click)="isActive('portfolio')" routerLink="/portfolio" fxFlex="25" matTooltip="Portfolio" [class.active]="activePath === 'portfolio'"><i class="material-icons">work</i></a>
       <a (click)="isActive('social-coding')" routerLink="/social-coding" fxFlex="25" matTooltip="Social Coding" [class.active]="activePath === 'social-coding'"><i class="material-icons">code</i></a>
       <a (click)="isActive('achievements')" routerLink="/achievements" fxFlex="25" matTooltip="Achievements" [class.active]="activePath === 'achievements'"><i class="material-icons">star</i></a>

@@ -1,8 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { MaterialModule } from './material';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
@@ -32,6 +33,7 @@ import { APP_BASE_HREF } from '@angular/common';
     AngularFontAwesomeModule,
     AppRoutingModule,
     BrowserModule,
+    BrowserAnimationsModule,
     FlexLayoutModule,
     HttpClientModule,
     MaterialModule,

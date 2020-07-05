@@ -5,8 +5,6 @@ import { MaterialModule } from './material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { HttpClientModule } from '@angular/common/http';
 
-import { AngularFontAwesomeModule } from 'angular-font-awesome';
-
 import { AchievementsComponent } from './achievements/achievements.component';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
@@ -30,7 +28,6 @@ import { APP_BASE_HREF } from '@angular/common';
     PortfolioItemComponent
   ],
   imports: [
-    AngularFontAwesomeModule,
     AppRoutingModule,
     BrowserModule,
     BrowserAnimationsModule,
